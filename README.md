@@ -102,7 +102,7 @@ This suggests:
 
 - Larger models do not necessarily produce better representations
 - Model capacity must match dataset scale and training conditions
-- Data augment is vital for output accuracy.
+- Data augment is more vital to output accuracy than model size
 
 **3️⃣ Representation Quality Analysis**
 
