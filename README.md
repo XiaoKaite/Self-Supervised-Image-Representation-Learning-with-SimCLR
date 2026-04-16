@@ -94,7 +94,7 @@ Two types of visualizations are generated:
 
 The model significantly outperforms random baseline (10%), achieving over 60% accuracy using KNN, demonstrating that meaningful features are learned without labels.
 
-**2️⃣ Model Size vs Performance**
+**2️⃣ Performance Influencing Factors**
 
 Interestingly, **ResNet18 slightly outperforms ResNet50** under the same training configuration. But when removing Gaussian Blur function while data augmentation, ResNet18 significantly performs worse.
 
