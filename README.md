@@ -137,7 +137,7 @@ project/
 
 │
 
-├── train.py              # Training pipeline
+├── trainer.py              # Training pipeline
 
 ├── tsne_vis.py           # Visualization script
 
