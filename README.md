@@ -1,10 +1,10 @@
-***🔍 Self-Supervised Image Representation Learning with SimCLR***
+*** Self-Supervised Image Representation Learning with SimCLR***
 
 Due to size limitation from Github, trained models are uploaded in releases. Copy them into checkpoints/ for direct use.
 
-# 📌 Project Overview
+# Project Overview
 
-This project explores **self-supervised representation learning** using the SimCLR framework on the CIFAR-10 dataset.
+This project achieves and explores **self-supervised representation learning** using the SimCLR framework on the CIFAR-10 dataset.
 
 Instead of relying on labeled data, the model learns meaningful visual representations through **contrastive learning**, where different augmented views of the same image are treated as positive pairs.
 
@@ -14,9 +14,9 @@ The goal is to investigate:
 - How model architecture affects representation quality
 - How well learned features align with semantic categories
 
-# 🧠 Methodology
+#  Methodology
 
-**1️⃣ Framework: SimCLR**
+**1. Framework: SimCLR**
 
 I adopt the Contrastive Learning paradigm:
 
@@ -24,7 +24,7 @@ I adopt the Contrastive Learning paradigm:
 - Train a neural network to maximize similarity between positive pairs
 - Use negative samples from the same batch for contrast
 
-**2️⃣ Model Architecture**
+**2. Model Architecture**
 
 I experimented with two backbones:
 
@@ -33,15 +33,15 @@ I experimented with two backbones:
 
 Both models are implemented using PyTorch and followed by a projection head for contrastive training.
 
-**3️⃣ Evaluation Strategy**
+**3️. Evaluation Strategy**
 
 Since the training is unsupervised, I evaluate learned representations using:
 
-**🔹 KNN Classification**
+**- KNN Classification**
 
 A K-Nearest Neighbors algorithm classifier is trained on extracted features to measure classification accuracy.
 
-**🔹 t-SNE Visualization**
+**- t-SNE Visualization**
 
 I applied t-SNE to visualize high-dimensional representations in 2D.
 
@@ -52,9 +52,9 @@ Two types of visualizations are generated:
 - **True Labels** → ground truth categories
 - **Cluster Labels** → unsupervised grouping via KMeans
 
-**📊 Experimental Results**
+**Experimental Results**
 
-**🔢 Quantitative Results**
+**Quantitative Results**
 
 | Model | Epochs | Batch Size | KNN Accuracy |
 |---|---|---|---|
@@ -62,19 +62,19 @@ Two types of visualizations are generated:
 | ResNet18 | 50 | 512 | 61% |
 | ResNet50 | 50 | 512 | 60% |
 
-**📈 Qualitative Analysis (t-SNE)**
+**Qualitative Analysis (t-SNE)**
 
-**🔹 True Label Visualization**
+**- True Label Visualization**
 
 - Reveals the underlying semantic structure
 - Shows whether samples from the same class cluster together
 
-**🔹 Cluster Label Visualization**
+**- Cluster Label Visualization**
 
 - Shows how the model groups data without supervision
 - Evaluates whether clustering aligns with real categories
 
-**🔹Visualized Graph Comparison**
+**-Visualized Graph Comparison**
 **ResNet-18**
 | 1.1 True Label | 1.2 Cluster Label |
 |----------------|-------------------|
@@ -88,13 +88,13 @@ Two types of visualizations are generated:
 
 
 
-# 🔍 Key Findings
+#  Key Findings
 
-**1️⃣ Effective Representation Learning**
+**1️. Effective Representation Learning**
 
 The model significantly outperforms random baseline (10%), achieving over 60% accuracy using KNN, demonstrating that meaningful features are learned without labels.
 
-**2️⃣ Performance Influencing Factors**
+**2️. Performance Influencing Factors**
 
 Interestingly, **ResNet18 slightly outperforms ResNet50** under the same training configuration. But when removing Gaussian Blur function while data augmentation, ResNet18 significantly performs worse.
 
@@ -104,7 +104,7 @@ This suggests:
 - Model capacity must match dataset scale and training conditions
 - Data augment is more vital to output accuracy than model size
 
-**3️⃣ Representation Quality Analysis**
+**3️. Representation Quality Analysis**
 
 From t-SNE visualizations:
 
@@ -116,13 +116,13 @@ This indicates that:
 
 The learned representations capture some semantic structure but remain imperfectly separable.
 
-# 🧠 Insights
+#  Insights
 
 This project highlights an important principle:
 
 **Better representations are not solely determined by model size, but by the balance between model capacity, data scale, and training dynamics.**
 
-**⚙️ Implementation Details**
+**Implementation Details**
 
 - Framework: PyTorch
 - Dataset: CIFAR-10
@@ -131,7 +131,7 @@ This project highlights an important principle:
 - Optimization: Adam
 - Hardware: Nvidia Geforce RTX 5070 Laptop GPU (CUDA-enabled)
 
-# 📁 Project Structure
+# Project Structure
 
 project/
 
@@ -147,7 +147,7 @@ project/
 
 └── README.md      
 
-# 🎯 Conclusion
+# Conclusion
 
 This project demonstrates that self-supervised learning can extract meaningful representations from unlabeled data, while also revealing the limitations of model scaling under constrained settings.
 
