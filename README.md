@@ -59,8 +59,8 @@ Two types of visualizations are generated:
 | Model | Epochs | Batch Size | KNN Accuracy |
 |---|---|---|---|
 | ResNet18 without Gaussian Blur | 50 | 512 | 41% |
-| ResNet18 | 50 | 512 | 61% |
-| ResNet50 | 50 | 512 | 60% |
+| ResNet18 with Gaussian Blur | 50 | 512 | 61% |
+| ResNet50 with Gaussian Blur | 50 | 512 | 60% |
 
 **Qualitative Analysis (t-SNE)**
 
