@@ -1,5 +1,5 @@
 ***🔍 Self-Supervised Image Representation Learning with SimCLR***
-
+Due to size limitation from Github, trained models are uploaded in releases. Copy them into checkpoints/ for direct use.
 # 📌 Project Overview
 
 This project explores **self-supervised representation learning** using the SimCLR framework on the CIFAR-10 dataset.
