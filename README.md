@@ -1,4 +1,4 @@
-*** Self-Supervised Image Representation Learning with SimCLR***
+***Self-Supervised Image Representation Learning with SimCLR***
 
 Due to size limitation from Github, trained models are uploaded in releases. Copy them into checkpoints/ for direct use.
 
