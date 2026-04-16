@@ -58,6 +58,7 @@ Two types of visualizations are generated:
 
 | Model | Epochs | Batch Size | KNN Accuracy |
 |---|---|---|---|
+| ResNet18 without Gaussian Blur | 50 | 512 | 41% |
 | ResNet18 | 50 | 512 | 61% |
 | ResNet50 | 50 | 512 | 60% |
 
@@ -95,12 +96,13 @@ The model significantly outperforms random baseline (10%), achieving over 60% ac
 
 **2️⃣ Model Size vs Performance**
 
-Interestingly, **ResNet18 slightly outperforms ResNet50** under the same training configuration.
+Interestingly, **ResNet18 slightly outperforms ResNet50** under the same training configuration. But when removing Gaussian Blur function while data augmentation, ResNet18 significantly performs worse.
 
 This suggests:
 
 - Larger models do not necessarily produce better representations
 - Model capacity must match dataset scale and training conditions
+- Data augment is vital for output accuracy.
 
 **3️⃣ Representation Quality Analysis**
 
