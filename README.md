@@ -1,6 +1,6 @@
-**🔍 Self-Supervised Image Representation Learning with SimCLR**
+***🔍 Self-Supervised Image Representation Learning with SimCLR***
 
-**📌 Project Overview**
+# 📌 Project Overview
 
 This project explores **self-supervised representation learning** using the SimCLR framework on the CIFAR-10 dataset.
 
@@ -12,7 +12,7 @@ The goal is to investigate:
 - How model architecture affects representation quality
 - How well learned features align with semantic categories
 
-**🧠 Methodology**
+# 🧠 Methodology
 
 **1️⃣ Framework: SimCLR**
 
@@ -85,7 +85,7 @@ Two types of visualizations are generated:
 
 
 
-**🔍 Key Findings**
+# 🔍 Key Findings
 
 **1️⃣ Effective Representation Learning**
 
@@ -112,7 +112,7 @@ This indicates that:
 
 The learned representations capture some semantic structure but remain imperfectly separable.
 
-**🧠 Insights**
+# 🧠 Insights
 
 This project highlights an important principle:
 
@@ -127,7 +127,7 @@ This project highlights an important principle:
 - Optimization: Adam
 - Hardware: Nvidia Geforce RTX 5070 Laptop GPU (CUDA-enabled)
 
-**📁 Project Structure**
+# 📁 Project Structure
 
 project/
 
@@ -143,7 +143,7 @@ project/
 
 └── README.md      
 
-**🎯 Conclusion**
+# 🎯 Conclusion
 
 This project demonstrates that self-supervised learning can extract meaningful representations from unlabeled data, while also revealing the limitations of model scaling under constrained settings.
 
